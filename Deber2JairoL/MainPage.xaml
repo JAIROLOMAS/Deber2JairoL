@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Deber2JairoL.MainPage">
+
+    <StackLayout>
+     <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+            <Label Text="Deber 2: Elementos Visuales" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+        </Frame>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+
+            </Grid.RowDefinitions>
+            
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                           
+                
+            </Grid.ColumnDefinitions>
+                
+            
+                <Label Text="Ingrese Nota del Primer Parcial" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtValorUno" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Ingrese Nota del examen" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtValorDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+        
+                <Label Text="La Nota del Primer Parcial es" Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="txtResultado1" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+           
+                <Label Text="Ingrese Nota del segundo Parcial" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtValorTres" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+
+                <Label Text="Ingrese Nota del examen" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtValorCuatro" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
+            
+                <Label Text="La Nota del segundo Parcial es" Grid.Row="5" Grid.Column="0" />
+                <Entry x:Name="txtResultado2" IsReadOnly="True" Grid.Row="5" Grid.Column="1"/>
+            
+                <Label Text="La Nota Final del Semestre es:" Grid.Row="6" Grid.Column="0" />
+                <Entry x:Name="txtResultado3" IsReadOnly="True" Grid.Row="6" Grid.Column="1"/>
+            
+                <Label Text="Ingrese La Nota del segundo Parcial " Grid.Row="7" Grid.Column="0" />
+                <Entry x:Name="txtValorCinco" IsReadOnly="True" Grid.Row="7" Grid.Column="1"/>
+            
+                <Label Text=" Ingrese La Nota Final del Semestre es:" Grid.Row="8" Grid.Column="0" />
+                <Entry x:Name="txtValorSeis" IsReadOnly="True" Grid.Row="8" Grid.Column="1"/>
+            
+                <Label Text=" La Nota Final del Semestre es:" Grid.Row="9" Grid.Column="0" />
+                <Entry x:Name="txtValorSiete" IsReadOnly="True" Grid.Row="9" Grid.Column="1"/>
+
+
+            
+         </Grid>
+        
+        <Button x:Name="btnSumar1" Text="Calcular Nota Parcial 1" Clicked="btnSumar_Clicked"/>
+        <Button x:Name="btnSumar2" Text="Calcular Nota Parcial 2" Clicked="btnSumar_Clicked_1"/>
+        <Button x:Name="btnSumar3" Text="Calcular Nota Final Parcial " Clicked="btnSumar3_Clicked"/>
+        
+    </StackLayout>
+
+</ContentPage>
