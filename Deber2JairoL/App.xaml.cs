@@ -10,7 +10,8 @@ namespace Deber2JairoL
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //navegacion entre ventanas
+            MainPage = new NavigationPage (new MainPage());
         }
 
         protected override void OnStart()

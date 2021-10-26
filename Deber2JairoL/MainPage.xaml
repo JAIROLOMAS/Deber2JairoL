@@ -8,6 +8,11 @@
             <Label Text="Deber 2: Elementos Visuales" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
         </Frame>
 
+        <Entry x:Name="txtUsuario" Placeholder="Ingrese su Usuario"/>
+        <Entry x:Name="txtClave" Placeholder="Ingrese su Clave" IsPassword="True"/>
+
+        <Button x:Name="btnAbrir" Text="Abrir Ventana Dos" Clicked="btnAbrir_Clicked"/>
+
         <Grid>
 
             <Grid.RowDefinitions>

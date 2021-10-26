@@ -68,7 +68,7 @@ namespace Deber2JairoL
                 double valorF2 = Convert.ToDouble(txtValorSeis.Text);
 
                 //operacion
-                double suma = valorF1  + valorF2 ;
+                double suma = valorF1 + valorF2;
 
                 // visualizar nota final en pantalla
                 txtValorSiete.Text = suma.ToString();
@@ -79,6 +79,25 @@ namespace Deber2JairoL
                 DisplayAlert("Mensaje de Alerta", ex.Message, "ok");
             }
         }
+
+        private async void btnAbrir_Clicked(object sender, EventArgs e)
+        {
+            try {
+
+                string usuario = txtUsuario.Text;
+                string clave = txtClave.Text;
+
+                //Permite abrir la Ventana Dos
+                await Navigation.PushAsync(new ViewDos(usuario, clave));
+
+            }
+            catch (Exception ex) {
+
+                
+                await DisplayAlert("Mensaje de Advertencia", ex.Message, "Ok");
+            }
+
+        }
     }
 
-  
+}
